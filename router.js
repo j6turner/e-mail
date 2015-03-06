@@ -1,4 +1,5 @@
-E-mail.Router.map(function() {
+Email.Router.map(function() {
   this.resource('application');
-  this.resource('home');
+  this.resource('home', { path: '/' });
+  this.resource('users');
 });
