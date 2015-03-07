@@ -5,5 +5,5 @@ Email.Router.map(function() {
   this.resource('user');
   this.resource('users');
   this.resource('advice');
-  this.resource('send-message');
+  this.resource('new-message');
 });
