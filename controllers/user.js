@@ -1,11 +1,11 @@
 Email.UserController = Ember.ObjectController.extend({
-  beingModified: false,
+  isEditing: false,
   actions: {
-    modify: function() {
-      this.set('beingModified', true);
+    edit: function() {
+      this.set('isEditing', true);
     },
     save: function() {
-      this.set('beingModified', false);
+      this.set('isEditing', false);
     }
   }
 });
