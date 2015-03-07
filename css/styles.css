@@ -46,6 +46,17 @@ ul.nav {
   float: right;
 }
 
+.btn {
+  font-family: 'Glegoo', Courier;
+  font-weight: bold;
+}
+
+.btn:hover {
+  font-family: 'Glegoo', Courier;
+  font-weight: bold;
+  background-color: #FF944D;
+}
+
 .instruction {
   font-style: italic;
   color: gray;
