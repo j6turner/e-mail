@@ -1,29 +1,48 @@
 <h2>{{name}}</h2>
 
-{{#if beingModified}}
-  <form>
+{{#if isEditing}}
 
+  <form>
     <div class="form-group">
       <label for="name">User Name</label>
         {{input id="name" class="form-control value=name"}}
     </div>
-
     <div class="form-group">
       <label for="address">E-mail Address</label>
         {{input id="address" class="form-control" value=address}}
     </div>
-
     <div class="form-group">
       <button class="btn btn-default" {{action 'save'}}>&#9442;ave</button>
     </div>
-
   </form>
+
 {{else}}
 
-  <p>{{address}}</p>
-
+  <h4>{{address}}</h4>
   <div class="form-group">
     <button class="btn btn-default" {{action 'modify'}}>&#9436;odify</button>
   </div>
 
+{{/if}}
+
   {{outlet}}
+
+<h2>Messages:</h2>
+
+{{#each message in messages itemController="message"}}
+  <hr>
+  <p>
+    Receiver: {{message.receiver}}
+    <br>
+    Subject: {{message.subject}}
+    <br>
+    <button class="btn btn-default" {{action 'details'}}>&#8859; ~ Details</button>
+    <button class="btn btn-default" {{action 'delete'}}>X ~ Delete</button>
+  </p>
+  {{#if message.isShowing}}
+    {{message.message}}
+  {{/if}}
+  <hr>
+{{/each}}
+
+<p>{{#link-to 'send-message' this class="btn btn-default"}}New Message{{/link-to}}</p>
