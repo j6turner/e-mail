@@ -1,4 +1,4 @@
-Email.UserController = Ember.Controller.extend({
+Email.NewUserController = Ember.Controller.extend({
   actions: {
     save: function() {
       var newUser = this.store.createRecord('user', {
