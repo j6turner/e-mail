@@ -6,6 +6,11 @@ E-mail Client allows user to list out all messages, to click on an individual me
 Features include [Ember.js](http://emberjs.com), [JQuery](http://jquery.com/),
 and [Bootstrap](http://getbootstrap.com/).
 
+Note
+-----
+
+This app is a mock e-mail client, simply illustrating the relationships between the components. The nav bar includes a "Send Message" tab, which will be incorporated in a later incarnation of the app (the "send message" function will be de-nested from the "user" view).
+
 
 Usage
 -----
