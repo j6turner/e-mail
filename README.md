@@ -3,7 +3,7 @@ E-mail Client
 
 E-mail Client allows user to list out all messages, to click on an individual message to see the full body, and to "send" messages.
 
-Features include [Ember.js](http://emberjs.com), [JQuery](http://jquery.com/),
+Features include [Ember.js](http://emberjs.com), [jQuery](http://jquery.com/),
 and [Bootstrap](http://getbootstrap.com/).
 
 Note
